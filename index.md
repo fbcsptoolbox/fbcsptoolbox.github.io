@@ -4,7 +4,7 @@ Currently in construction
   
 FBCSP is a popular method for classifying different motor imagery (MI) classes from electroencephalogram (EEG) signals and is typically used in brain-computer interface (BCI) applications. More information about the algorithm can be found here.
 
-Over the years, FBCSP has become the [de facto standard] (https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.23730) method for classifying two or more MI classes. This toolbox provides the tools and methods to use FBCSP on EEG data. Examples are also provided to demonstate how to use this toolbox. 
+Over the years, FBCSP has become the <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.23730">"de facto standard"</a> method for classifying two or more MI classes. This toolbox provides the tools and methods to use FBCSP on EEG data. Examples are also provided to demonstate how to use this toolbox. 
 
 You can use the [editor on GitHub](https://github.com/fbcsptoolbox/fbcsptoolbox.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
