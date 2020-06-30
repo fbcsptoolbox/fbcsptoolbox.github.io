@@ -2,7 +2,7 @@
 layout: page
 title: FBCSP Toolbox Architecture
 filename: architecture.md
-permalink: https://fbcsptoolbox.github.io/architecture
+permalink: https://fbcsptoolbox.github.io/architecture.md
 ---
 
 # FBCSP Toolbox Architecture
