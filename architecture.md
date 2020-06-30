@@ -1,6 +1,9 @@
+---
 layout: page
 title: FBCSP Toolbox Architecture
+filename: architecture.md
 permalink: https://fbcsptoolbox.github.io/architecture
+---
 
 # FBCSP Toolbox Architecture
 This section explains the architecture of the FBCSP toolbox. 
