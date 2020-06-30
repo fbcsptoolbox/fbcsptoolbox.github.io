@@ -16,7 +16,9 @@ A manual in a pdf format can be downloaded here for an in-depth, detailed descri
 
 ### MLEngine
 
-This module serves to integrate the various steps involved in a typical machine learning pipeline for a BCI application. `MLEngine.experiment()` is the main function that can be used for this purpose. The main components of such a pipeline typically are data loading, preprocessing, splitting the data into training and testing sets, feature extraction, feature selection and classification. To enable maximum reuse of the methods, it is recommended that the data loading functions extract the EEG data into numpy.ndarrays and pass them as outputs for all subsequent signal processing and machine learning. This means that in order to use the other components of this toolbox, data should be arranged as 3D numpy array (trials x channels x time samples) and trial labels should be loaded as a 1D numpy array. The sampling frequency should also be made available to the corresponding classes/methods such as MLEngine.FilterBank. All other dataset specific details should be abstracted away, possibly in other variables/attributes.
+This module serves to integrate the various steps involved in a typical machine learning pipeline for a BCI application. `MLEngine.experiment()` is the main function that can be used for this purpose. The main components of such a pipeline typically are data loading, preprocessing, splitting the data into training and testing sets, feature extraction, feature selection and classification. To enable maximum reuse of the methods, it is recommended that the data loading functions extract the EEG data into numpy.ndarrays and pass them as outputs for all subsequent signal processing and machine learning. This means that in order to use the other components of this toolbox, data should be arranged as 3D numpy array (trials x channels x time samples) and trial labels should be loaded as a 1D numpy array. The sampling frequency should also be made available to the corresponding classes/methods such as MLEngine.FilterBank. All other dataset specific details should be abstracted away, possibly in other variables/attributes. In order to use this class, an instance can be made in an outer main script by passing the path to the data folder. Subsequent mathods can then be used to invoke data loading, preocessing and classification pipeline. 
+
+### FilterBank
 
 ## Loading EEG data
 
@@ -34,4 +36,14 @@ This class inherits the DataLoader and provides added parameters to specifically
 
 ## Preprocessing EEG data
 
-###
+### PreprocessKU
+
+This class provides a few basic methods to preprocess the data from Korea University. Similar steps may be used for other datasets as well. More functionality can be added here, as needed.
+
+## FBCSP 
+
+### CSP
+
+## Classifier
+
+### FeatureSelect
