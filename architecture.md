@@ -1,5 +1,4 @@
 ---
-theme: jekyll-theme-cayman
 layout: page
 title: FBCSP Toolbox Architecture
 filename: architecture.md
