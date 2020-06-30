@@ -1,3 +1,7 @@
+layout: page
+title: FBCSP Toolbox Architecture
+permalink: https://fbcsptoolbox.github.io/architecture
+
 # FBCSP Toolbox Architecture
 This section explains the architecture of the FBCSP toolbox. 
 To facilitate maximum reuse of the code on other datasets, it has been written in a modular structure.
