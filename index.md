@@ -1,3 +1,9 @@
+---
+theme: jekyll-theme-cayman
+title: Welcome to the FBCSP Toolbox!
+description: Feel free to bookmark this to keep an eye on my project updates
+---
+
 # Filter Bank Common Spatial Patterns
 
 Currently in construction
