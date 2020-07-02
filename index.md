@@ -21,35 +21,3 @@ A yml file containing the environment requirements for running this toolbox is a
 
 ## How to use this toolbox
 EEG data to be used for running this code has not been included along with this toolbox. The example code provided along with this toolbox can be used on the BCI Competition dataset IV 2a and the Korea University dataset. Data can be downloaded in the original GDF format and mat formats, respectively. Data loading functions provided along with this toolbox are configured with defaults to process the data as proposed by the authors and to reproduce the results provided in this manual.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/fbcsptoolbox/fbcsptoolbox.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
