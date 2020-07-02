@@ -5,9 +5,10 @@ filename: tutorials.md
 ---
 
 ### Subject-specific 10 x 10 cross-validation on BCIC Dataset
-The code below shows how to perform 10 x 10 cross-validation using on the BCI Competition Dataset IV 2a using this toolbox. In the ` mainPipeline.py`, create an instance of the `MLEngine` class by passing the details of the data folder as follows:
+The code below shows how to perform 10 x 10 cross-validation using on the BCI Competition Dataset IV 2a using this toolbox. In the `mainPipeline.py`, create an instance of the `MLEngine` class by passing the details of the data folder as follows:
 
-`from bin.MLEngine import MLEngine
+`
+from bin.MLEngine import MLEngine
 
 dataset_details={
 'data_path' : "/Data/BCICIV_2a_gdf", #path to data folder 
@@ -20,6 +21,7 @@ ML_experiment = MLEngine(**dataset_details) ML_experiment.experiment()
 `
 
 In `MLEngine.experiment`, use the code below:
+
 `
         bcic_data = LoadData.LoadBCIC(self.file_to_load, self.data_path)
         eeg_data = bcic_data.get_epochs()
@@ -86,11 +88,13 @@ In `MLEngine.experiment`, use the code below:
         print('*'*10,'\n')
         print(f'Mean Training Accuracy = {str(mean_training_accuracy)}\n')
         print(f'Mean Testing Accuracy = {str(mean_testing_accuracy)}')
-        print('*' * 10, '\n')`
+        print('*' * 10, '\n')
+`
 
 In order to use MIBIF feature selection, use `Classifer.feature_selection = True`. The `FeatureSelect.fit()` method can be kept as follows:
 
-`    def fit(self,x_train_features,y_train):
+`    
+   def fit(self,x_train_features,y_train):
         MI_features = self.MIBIF(x_train_features, y_train)
         MI_sorted_idx = np.argsort(MI_features)[::-1]
         features_selected = MI_sorted_idx[:self.n_features_select]
@@ -99,7 +103,8 @@ In order to use MIBIF feature selection, use `Classifer.feature_selection = True
         x_train_features_selected = x_train_features[:, paired_features_idx]
         self.features_selected_indices = paired_features_idx
 
-        return x_train_features_selected'
+        return x_train_features_selected
+'
 
 Using the above settings on each subject (the compeition training data, i.e., filenames ending with 'T') should produce the rsults below. Note that for reproducibility, the random seed value for every ntimes has been fixed as the index of that fold.
 
