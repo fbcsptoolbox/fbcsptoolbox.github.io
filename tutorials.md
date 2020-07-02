@@ -7,7 +7,9 @@ filename: tutorials.md
 ### Subject-specific 10 x 10 cross-validation on BCIC Dataset
 The code below shows how to perform 10 x 10 cross-validation using on the BCI Competition Dataset IV 2a using this toolbox. In the `mainPipeline.py`, create an instance of the `MLEngine` class by passing the details of the data folder as follows:
 
-`from bin.MLEngine import MLEngine
+```python
+
+from bin.MLEngine import MLEngine
 
 dataset_details={
 'data_path' : "/Data/BCICIV_2a_gdf", #path to data folder 
@@ -16,7 +18,8 @@ dataset_details={
 'kfold':10,
 'm_filters':2, 'window_details':{'tmin':0.5,'tmax':2.5}
 }
-ML_experiment = MLEngine(**dataset_details) ML_experiment.experiment()`
+ML_experiment = MLEngine(**dataset_details) ML_experiment.experiment()
+```
 
 In `MLEngine.experiment`, use the code below:
 
