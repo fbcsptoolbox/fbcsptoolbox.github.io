@@ -52,7 +52,7 @@ This class is used to derive the CSP spatial filters (`CSP.fit()`) from pre-filt
 
 ## Classifier
 
-This class can be used to carry out the training and testing for a given classifier. The classifier model must be made in `MLEngine.experiment()` and passed to this class. The `fit()` and `predict()` methods can then be used for training and testing the classifier,respectively. This module also contains the `FeatureSelect` class which can be used in agregation with the `Classifier` class in case a feature selection step is desired. However, if this step is not needed, the `Classifier.feature_selection ` flag can be set to `False`and the methods will not invoke the `FeatureSelect` class. 
+This class can be used to carry out the training and testing for a given classifier. The classifier model must be made in `MLEngine.experiment()` and passed to this class. The `fit()` and `predict()` methods can then be used for training and testing the classifier,respectively. This module also contains the `FeatureSelect` class which can be used in agregation with the `Classifier` class in case a feature selection step is desired. However, if this step is not needed, the `feature_selection` flag can be set to `False`and the methods will not invoke the `FeatureSelect` class. 
 
 ### FeatureSelect
 

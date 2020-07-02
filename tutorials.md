@@ -5,7 +5,7 @@ filename: tutorials.md
 ---
 This section provides a demonstration of how the code in this toolbox can be used. The sample results are also provided. 
 
-Two options are demonstrated: <a href="#10x10CV">Using 10 x 10 cross validation</a> and <a href="#Sequential">using 1x10 cross-validation using a sequential spliting of data</a>.
+Three options are demonstrated: <a href="#10x10CV">Using 10 x 10 cross validation</a> , <a href="#Sequential">using 1x10 cross-validation using a sequential spliting of data</a> and <a href="#Half">using halfway split intro training and test data sequentially</a>.
 
 {:#10x10CV}
 ## Subject-specific 10 x 10 cross-validation on BCI Competition Dataset IV 2a
@@ -40,8 +40,6 @@ testing_accuracy = []
 for k in range(self.ntimes):
     '''for N times x K fold CV'''
     train_indices, test_indices = self.cross_validate_Ntimes_Kfold(y_labels,ifold=k)
-    '''for K fold CV by sequential splitting'''
-    # train_indices, test_indices = self.cross_validate_sequential_split(y_labels)
     for i in range(self.kfold):
         train_idx = train_indices.get(i)
         test_idx = test_indices.get(i)
@@ -129,3 +127,17 @@ The settings above then produce the results as follows.
 Subject | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | S9 | Mean 
 --------|----|----|----|----|----|----|----|----|----|------
 Accuracy (MIBIF, n=4) | 81.97 | 46.19 | 84.75 | 56.30 | 69.64 | 45.48 | 87.51 | 84.99 | 82.92 | 71.08
+
+{:#Half}
+## Subject-specific sequential half splitting
+The code below shows how to use sequential half and half split of the data into training (first half) and test (second half) sets. Note that this is only meaningful to be performed once. Therefore, both `ntimes` and `kfold` should be passed as 1. In `MLEngine.experiment()`, use the following line to obtain the sequential half-half split into training and test sets. 
+
+```python
+    train_indices, test_indices = self.cross_validate_half_split(y_labels)
+```
+
+The settings above then produce the results as follows.
+
+Subject | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | S9 | Mean 
+--------|----|----|----|----|----|----|----|----|----|------
+Accuracy (MIBIF, n=4) | 79.17 | 43.06 | 79.86 | 52.08 | 63.19 | 43.05 | 81.94 | 78.47 | 77.08 | 66.43
