@@ -3,8 +3,12 @@ layout: default
 title: Tutorials 
 filename: tutorials.md
 ---
+This section provides a demonstration of how the code in this toolbox can be used. The sample results are also provided. 
 
-### Subject-specific 10 x 10 cross-validation on BCIC Dataset
+Two options are demonstrated: <a href="#10x10CV">Using 10 x 10 cross validation</a> and <a href="#Sequential">using 1x10 cross-validation using a sequential spliting of data</a>.
+
+<id="10x10CV">
+## Subject-specific 10 x 10 cross-validation on BCI Competition Dataset IV 2a
 The code below shows how to perform 10 x 10 cross-validation using on the BCI Competition Dataset IV 2a using this toolbox. In the `mainPipeline.py`, create an instance of the `MLEngine` class by passing the details of the data folder as follows:
 
 ```python
@@ -111,3 +115,17 @@ Using the above settings on each subject (the compeition training data, i.e., fi
 Subject | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | S9 | Mean 
 --------|----|----|----|----|----|----|----|----|----|------
 Accuracy (MIBIF, n=4) | 82.56 | 51.64 | 84.35 | 57.62 | 70.31 | 48.42 | 87.53 | 85.11 | 84.03 | 72.40
+
+<id="Sequential">
+## Subject-specific sequential splitting cross-validation
+The code below shows how to perform cross-validation by sequential splitting of data from the BCI Competation Dataset IV 2a. Note that this only uses 1x10 cross validation therefore `ntimes` must be passed as 1. In `MLEngine.experiment()`, use the following line for obtaining the training and test split by sequential splitting.
+
+```python
+    train_indices, test_indices = self.cross_validate_sequential_split(y_labels)
+```
+
+The settings above then produce the results as follows.
+
+Subject | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | S9 | Mean 
+--------|----|----|----|----|----|----|----|----|----|------
+Accuracy (MIBIF, n=4) | 81.97 | 46.19 | 84.75 | 56.30 | 69.64 | 45.48 | 87.51 | 84.99 | 82.92 | 71.08
