@@ -106,6 +106,9 @@ def fit(self,x_train_features,y_train):
     return x_train_features_selected
 ```
 
-Using the above settings on each subject (the compeition training data, i.e., filenames ending with 'T') should produce the rsults below. Note that for reproducibility, the random seed value for every ntimes has been fixed as the index of that fold.
+Using the above settings on each subject (the compeition training data, i.e., filenames ending with 'T') should produce the results below. Note that for reproducibility, the random seed value for every ntimes has been fixed as the index of that fold.
 
-
+------------------------------------------------------------
+Subject | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | S9 | Mean |
+Accuracy (MIBIF, n=4) | 82.56 | 51.64 | 84.35 | 57.62 | 70.31 | 48.42 | 87.53 | 85.11 | 84.03 | 72.40 |
+-----------------------------------------------------------------------------------------------
