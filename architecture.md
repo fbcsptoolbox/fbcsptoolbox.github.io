@@ -12,6 +12,8 @@ The remainder of this section will provide a higher level overview of the variou
 
 A manual in a pdf format can be downloaded here for an in-depth, detailed description of the toolbox.
 
+<img src="{{site.baseurl}}/images/uml_class.png">
+
 ## Machine Learning Pipeline
 
 ### MLEngine
