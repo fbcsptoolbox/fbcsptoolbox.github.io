@@ -56,4 +56,4 @@ This class can be used to carry out the training and testing for a given classif
 
 ### FeatureSelect
 
-This class provides options for feature selection, as desired. Running the Classifier with the `Classifier.feature_selection` flag creates an instance of this class whose methods can then be used for feature selection. Moreover, this class also provides a method for mutual information based individual best feature (MIBIF) selection algorithm that was used in Ang et al, 2012. 
+This class provides options for feature selection, as desired. Running the Classifier with the `Classifier.feature_selection` flag creates an instance of this class whose methods can then be used for feature selection. Moreover, this class also provides a method for mutual information based individual best feature (MIBIF) selection algorithm that was used in <a href="https://www.frontiersin.org/articles/10.3389/fnins.2012.00039/full">Ang et al, 2012</a>. 
