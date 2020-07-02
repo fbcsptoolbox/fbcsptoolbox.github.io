@@ -42,8 +42,16 @@ This class provides a few basic methods to preprocess the data from Korea Univer
 
 ## FBCSP 
 
+This class is used for carrying out FBCSP as proposed by Ang et al, 2012. There are two methods provided, namely, `fit()` and `tranform()` that are used to derive the FBCSP filters and compute the projected features, respectively. This class assumes that the data has already been filtered and arranged in a 4D numpy.ndarray. In order to carry out filtering as per the original settings and design proposed by the authors in Ang et al, 2012, the `MLEngine.FilterBank` can be used. The FBCSP class invokes the CSP class (in a composition) to get the FBCSP filters (`FBCSP.fit()`) and compute the FBCSP features (`FBCSP.transform()`). For details on how CSP is computed, please refer to the documentation of the `CSP` class.
+
 ### CSP
+
+This class is used to derive the CSP spatial filters (`CSP.fit()`) from pre-filtered EEG data for a given pair of classes. Once the filters have been obtained, `CSP.transform()` can then be invoked to get the CSP filtered features. The `FBCSP` depends on this class (in a composition). However, this class can also be used independently to compute only the CSP features as well. For example, if a user wishes to compute a differnt variant of CSP, they can then leverage this class.
 
 ## Classifier
 
+This class can be used to carry out the training and testing for a given classifier. The classifier model must be made in `MLEngine.experiment()` and passed to this class. The `fit()` and `predict()` methods can then be used for training and testing the classifier,respectively. This module also contains the `FeatureSelect` class which can be used in agregation with the `Classifier` class in case a feature selection step is desired. However, if this step is not needed, the `Classifier.feature_selection ` flag can be set to `False`and the methods will not invoke the `FeatureSelect` class. 
+
 ### FeatureSelect
+
+This class provides options for feature selection, as desired. Running the Classifier with the `Classifier.feature_selection` flag creates an instance of this class whose methods can then be used for feature selection. Moreover, this class also provides a method for mutual information based individual best feature (MIBIF) selection algorithm that was used in Ang et al, 2012. 
