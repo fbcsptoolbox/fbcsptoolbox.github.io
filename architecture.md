@@ -34,7 +34,7 @@ This class inherits the DataLoader and provides added parameters to specifically
 
 ### LoadKU
 
-This class inherits the DataLoader and provides added parameters to specifically load the Korea University Dataset. Epoched data from mat files are loaded using the `DataLoader.load_raw_data_mat()` function. It is to be noted that this function does not download the data. The data needs to be downloaded prior to using this module.
+This class inherits the DataLoader and provides added parameters to specifically load the <a href="http://gigadb.org/dataset/100542">OpenBMI Dataset</a>. This dataset contains three paradigms for BCI, namely, MI, event-related potential (ERP) and steady-state visually evoked potential (SSVEP). This toolbox specifically uses the MI data from this dataset which consists of two classes: left vs right hand MI. The dataset comprises EEG data in .mat files. Epoched data from these files are loaded using the `DataLoader.load_raw_data_mat()` function. It is to be noted that this function does not download the data. The data needs to be downloaded prior to using this module.
 
 ## Preprocessing EEG data
 
