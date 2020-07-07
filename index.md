@@ -5,8 +5,6 @@ title: Welcome to the FBCSP Toolbox!
 
 # Filter Bank Common Spatial Patterns
 
-Currently under construction
-  
 FBCSP is a popular method for classifying motor imagery (MI) (multiple classes) from electroencephalogram (EEG) signals and is typically used in brain-computer interface (BCI) applications. More information about the algorithm can be found in <a href="https://ieeexplore.ieee.org/document/4634130">Ang et al., 2008</a>.
 
 Over the years, FBCSP has been widely deployed or benchmarked for classifying two or more MI classes. This toolbox provides the tools and methods to use FBCSP on EEG data. <a href="https://fbcsptoolbox.github.io/tutorials" target="_blank">Examples</a> are also provided to demonstrate how to use this toolbox. 
