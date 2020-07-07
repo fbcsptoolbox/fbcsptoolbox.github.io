@@ -115,7 +115,7 @@ Subject | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | S9 | Mean
 Accuracy (MIBIF, n=4) | 82.56 | 51.64 | 84.35 | 57.62 | 70.31 | 48.42 | 87.53 | 85.11 | 84.03 | 72.40
 
 {:#Sequential}
-## Subject-specific sequential splitting cross-validation
+## Subject-specific 1 x 10 cross-validation with sequential split on BCI Competition Dataset IV 2a
 The code below shows how to perform cross-validation by sequential splitting of data from the BCI Competation Dataset IV 2a. Note that this only uses 1x10 cross validation therefore `ntimes` must be passed as 1. In `MLEngine.experiment()`, use the following line for obtaining the training and test split by sequential splitting.
 
 ```python
@@ -129,7 +129,7 @@ Subject | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | S9 | Mean
 Accuracy (MIBIF, n=4) | 81.97 | 46.19 | 84.75 | 56.30 | 69.64 | 45.48 | 87.51 | 84.99 | 82.92 | 71.08
 
 {:#Half}
-## Subject-specific sequential half splitting
+## Subject-specific train-test with half-half split on BCI Competition Dataset IV 2a
 The code below shows how to use sequential half and half split of the data into training (first half) and test (second half) sets. Note that this is only meaningful to be performed once. Therefore, both `ntimes` and `kfold` should be passed as 1. In `MLEngine.experiment()`, use the following line to obtain the sequential half-half split into training and test sets. 
 
 ```python
