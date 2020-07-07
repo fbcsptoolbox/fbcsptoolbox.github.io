@@ -22,5 +22,5 @@ A yml file containing the environment requirements for running this toolbox is a
 EEG data to be used for running this code has not been included along with this toolbox. The example code provided along with this toolbox can be used on the <a href="http://www.bbci.de/competition/iv">BCI Competition dataset IV 2a</a> and the <a href="https://academic.oup.com/gigascience/article/8/5/giz002/5304369">Korea University dataset</a>. Data can be downloaded in the original GDF format and mat formats, respectively. Data loading functions provided along with this toolbox are configured with defaults to process the data as proposed by the authors and to reproduce the results provided in this manual.
 
 ## Contact
-Tushar Chouhan, PhD </br>
+Tushar Chouhan, PhD <br/>
 email: ntubci.scse[at]gmail.com
