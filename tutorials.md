@@ -126,7 +126,7 @@ The settings above then produce the results as follows.
 
 Subject | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | S9 | Mean 
 --------|----|----|----|----|----|----|----|----|----|------
-Accuracy (MIBIF, n=4) | 81.97 | 46.19 | 84.75 | 56.30 | 69.64 | 45.48 | 87.51 | 84.99 | 82.92 | 71.08
+Accuracy (MIBIF, n=4) | 83.03 | 48.65 | 83.97 | 56.29 | 72.18 | 51.02 | 86.77 | 83.63 | 82.94 | 72.05
 
 {:#Half}
 ## Subject-specific train-test with half-half split on BCI Competition Dataset IV 2a
