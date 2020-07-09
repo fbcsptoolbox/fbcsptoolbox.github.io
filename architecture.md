@@ -10,7 +10,7 @@ To facilitate maximum reuse of the code on other datasets, it has been written i
 
 The remainder of this section will provide a higher level overview of the various classes and methods that make up this toolbox along with a UML class diagram.
 
-A manual in a pdf format can be downloaded here for an in-depth, detailed description of the toolbox. A UML class diagram of the toolbox is shown below.
+A manual in a pdf format can be downloaded <a href="https://github.com/fbcsptoolbox/fbcsp_code/blob/master/FBCSP%20Toolbox%20Manual_v0.1.pdf">here</a> for an in-depth, detailed description of the toolbox. A UML class diagram of the toolbox is shown below.
 
 <img src="{{site.baseurl}}/images/uml_class.png">
 
