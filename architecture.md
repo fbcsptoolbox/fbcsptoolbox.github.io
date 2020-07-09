@@ -22,6 +22,8 @@ This module serves to integrate the various steps involved in a typical machine 
 
 ### FilterBank
 
+This class provides the filter bank designed as per the original <a href="https://fbcsptoolbox.github.io/publications">publications</a> introducing FBCSP. This toolbox uses this class to pre-filter the EEG signals into the various frequency bands which are used to extract FBCSP features. To carry out filtering with a different set of parameters but retaining the same kind of filters, this class can be inherited and its attributes modified as desired. The methods can then be used to carry out filtering of the EEG data.
+
 ## Loading EEG data
 
 ### DataLoader
