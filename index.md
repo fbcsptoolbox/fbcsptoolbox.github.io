@@ -21,4 +21,4 @@ EEG data to be used for running this code has not been included along with this 
 
 ## Contact
 Tushar Chouhan, PhD <br/>
-email: ntubci.scse[at]gmail.com
+email: tushar.chouhan[at]ntu.edu.sg
